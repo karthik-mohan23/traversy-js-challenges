@@ -7,6 +7,8 @@ function validatePassword(password) {
   const hasUpperCaseLetter = passwordArray.some(
     (letter) =>
       letter === letter.toUpperCase() && !Number.isInteger(parseInt(letter))
+    //   letter aanenki NaN kittum athu integer alathathkondu false kittum pakshe nml ! vachu true aakum - letter vannal true aakanam athinu vendi
+    // Number vannal false aakanam
   );
 
   const hasLowerCaseLetter = passwordArray.some(
